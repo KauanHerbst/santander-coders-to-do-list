@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="section-header">
+            <h1>Santander Coders 2024</h1>
+            <h2>To Do List</h2>
+    </header>
+    <main>
+        <section class="section-principal">
+            <h2>To Do List</h2>
+            <div class="inputs">
+                <label for="tarefa">Nome da Tarefa: </label>
+                <input type="text" name="tarefa" id="tarefa">
+                <label for="descricao">Descrição da Tarefa: </label>
+                <textarea id="descricao"></textarea>
+                <button onclick="adicionarTarefa()" class="btn-add">Adicionar Tarefa</button>
+              
+                <div id="notify">
+
+                </div>
+            </div>
+            <section id="lista-tarefas">
+            
+            </section>
+        </section>
+    </main>
+    <script src="../services/service.js"></script>
+    <script src="../services/home.js"></script>
+</body>
+</html>
