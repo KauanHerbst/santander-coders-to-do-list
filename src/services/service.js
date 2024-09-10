@@ -16,5 +16,9 @@ function salvarTarefas(tarefa){
 }
 
 function recuperarTarefas(){
-    return JSON.parse(localStorage.getItem("tarefas"));
+    const arrayTarefas = JSON.parse(localStorage.getItem("tarefas"));
+    if(arrayTarefas != null){
+        return arrayTarefas;
+    }
+    return [];
 }
